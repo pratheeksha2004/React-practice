@@ -1,0 +1,19 @@
+/* App.css (or component CSS) */
+.App {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+header {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  padding: 10px;
+}
+
+main {
+  margin-top: 20px;
+}
+html.dark-theme body { /* higher specificity than just 'body' */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
