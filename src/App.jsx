@@ -3,6 +3,7 @@ import React from 'react';
 import Welcome from './components/Welcome';
 import Profile from './components/Profile';
 import Functional from './components/Functional';
+import Class from './components/Class';
 import './App.css';
 import './index.css'
 function App() {
@@ -11,6 +12,7 @@ function App() {
            <Welcome/>
            <Profile/>
            <Functional/>
+           <Class/>
     </div>
   );
 }
