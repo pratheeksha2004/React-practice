@@ -7,6 +7,7 @@ import Class from './components/Class';
 import Props from './components/props';
 import Profile1 from './components/Profile1';
 import Myform from './components/events';
+import Conditions from './components/Conditions'
 import './App.css';
 import './index.css'
 function App() {
@@ -19,6 +20,7 @@ function App() {
            <Props isLoggedIn={true} name="bob"/>
            <Profile1/>
            <Myform/>
+           <Conditions isLoggedIn={true}/>
     </div>
   );
 }
