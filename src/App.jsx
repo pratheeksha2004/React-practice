@@ -22,6 +22,9 @@ import NotFound from './pages/NotFound';
 import users from './data/data';  
 import Keys from './components/keys';
 import InfiniteLoopCounter  from './components/hooks1';
+import Controlled from './components/Controlled';
+import UnControlled from './components/UnControlled';
+import FormValid from './components/FormValidation';
 function App() {
   const passdata=[2,3,4,5,6,6,66,6];
   const [addNumb,setNum]=useState([10,20,30]);
@@ -70,6 +73,9 @@ function App() {
             <ThemeProvider>
       <ThemeSwitcher />
     </ThemeProvider>
+    <Controlled/>
+    <UnControlled/>
+    <FormValid/>
     </div>
   );
 }
