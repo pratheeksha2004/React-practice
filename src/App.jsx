@@ -13,9 +13,12 @@ import Filter from './components/filter';
 import Hooks from './components/hooks';
 import './App.css';
 import './index.css'
+import { Routes, Route, Link } from 'react-router-dom';
 import { ThemeProvider } from "./context/ThemeContext";
 import ThemeSwitcher from "./components/ThemeSwitcher";
-
+import Home from './pages/Home';
+import About from './pages/About';
+import NotFound from './pages/NotFound';
 import users from './data/data';  
 import Keys from './components/keys';
 import InfiniteLoopCounter  from './components/hooks1';
@@ -34,6 +37,21 @@ function App() {
   }
   return (
     <div className="App">
+      <div>
+        <nav>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/contact'>Contact us</Link></li>
+          </ul>
+        </nav>
+        <hr/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='*' element={<NotFound/>}/>
+        </Routes>
+      </div>
            <Welcome/>
            <Profile/>
            <Functional/>
