@@ -25,6 +25,9 @@ import InfiniteLoopCounter  from './components/hooks1';
 import Controlled from './components/Controlled';
 import UnControlled from './components/UnControlled';
 import FormValid from './components/FormValidation';
+import EvenetError from './components/EventError';
+import Counter from './components/Counter';
+import UserList from './components/UserList';
 function App() {
   const passdata=[2,3,4,5,6,6,66,6];
   const [addNumb,setNum]=useState([10,20,30]);
@@ -69,6 +72,8 @@ function App() {
               <Keys user={users}/>
               <Filter numbers={[1,2,3,4,5,6,7,8,9]}/>
               <Hooks/>
+              <EvenetError/>
+              <UserList/>
             {/* <InfiniteLoopCounter /> */} 
             <ThemeProvider>
       <ThemeSwitcher />
@@ -76,6 +81,7 @@ function App() {
     <Controlled/>
     <UnControlled/>
     <FormValid/>
+    <Counter/>
     </div>
   );
 }
