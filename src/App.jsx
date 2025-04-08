@@ -28,6 +28,7 @@ import FormValid from './components/FormValidation';
 import EvenetError from './components/EventError';
 import Counter from './components/Counter';
 import UserList from './components/UserList';
+import CounterMcq from './components/CounterMcq';
 function App() {
   const passdata=[2,3,4,5,6,6,66,6];
   const [addNumb,setNum]=useState([10,20,30]);
@@ -82,6 +83,7 @@ function App() {
     <UnControlled/>
     <FormValid/>
     <Counter/>
+    <CounterMcq/>
     </div>
   );
 }
